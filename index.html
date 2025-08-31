@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Ika Shafira Salwadilla</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__brand">Ika<span>Porto</span></a>
+
+      <button class="nav__toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-menu">
+        ☰
+      </button>
+
+      <ul id="nav-menu" class="nav__menu">
+        <li><a class="nav__link" href="#about">Tentang</a></li>
+        <li><a class="nav__link" href="#skills">Keahlian</a></li>
+        <li><a class="nav__link" href="#projects">Proyek</a></li>
+        <li><a class="nav__link" href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="container hero__inner">
+      <img src="images/foto-profil.jpg" alt="Foto Profil Ika" class="avatar" />
+      <div class="hero__text">
+        <h1>Halo, saya <span>Ika Shafira Salwadilla</span></h1>
+        <p>Mahasiswi Teknologi Rekayasa Internet | Adaptif, kolaboratif, dan suka belajar hal baru.</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn">Lihat Proyek</a>
+          <a href="#contact" class="btn btn--ghost">Hubungi Saya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section__title">✨ Tentang Saya</h2>
+      <p class="section__lead">
+        Saya tertarik pada <strong>web development</strong>, <strong>IoT</strong>, dan sistem cerdas.
+        Terbiasa bekerja tim maupun individu, serta antusias mengeksplor teknologi baru.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">🛠️ Keahlian</h2>
+      <ul class="chips">
+        <li class="chip">HTML</li>
+        <li class="chip">CSS</li>
+        <li class="chip">JavaScript</li>
+        <li class="chip">PHP</li>
+        <li class="chip">Laravel</li>
+        <li class="chip">MySQL</li>
+        <li class="chip">IoT (ESP32, Raspberry Pi)</li>
+        <li class="chip">ML dasar</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section__title">📂 Proyek</h2>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <button class="card" data-modal-target="#proj1">
+          <img src="images/proj1.jpg" alt="Smart Box IoT" class="card__img" onerror="this.style.display='none'"/>
+          <div class="card__body">
+            <h3 class="card__title">Smart Box Penerima Paket</h3>
+            <p class="card__desc">Kotak paket berbasis Raspberry Pi + ESP32-CAM dengan face recognition & QR Code.</p>
+            <span class="card__more">Lihat detail →</span>
+          </div>
+        </button>
+
+        <!-- Card 2 -->
+        <button class="card" data-modal-target="#proj2">
+          <img src="images/proj2.jpg" alt="Website Check-in" class="card__img" onerror="this.style.display='none'"/>
+          <div class="card__body">
+            <h3 class="card__title">Website Check-in</h3>
+            <p class="card__desc">Aplikasi web sederhana untuk pencatatan tamu (Laravel + MySQL).</p>
+            <span class="card__more">Lihat detail →</span>
+          </div>
+        </button>
+
+        <!-- Card 3 -->
+        <button class="card" data-modal-target="#proj3">
+          <img src="images/proj3.jpg" alt="Smart Home" class="card__img" onerror="this.style.display='none'"/>
+          <div class="card__body">
+            <h3 class="card__title">Smart Home Mini</h3>
+            <p class="card__desc">Kontrol lampu/AC via voice (NodeMCU + Google Nest Mini).</p>
+            <span class="card__more">Lihat detail →</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">📧 Kontak</h2>
+      <p class="section__lead">Terbuka untuk kolaborasi, magang, maupun freelance.</p>
+      <div class="contact__grid">
+        <a href="mailto:ikashafira@email.com" class="contact__item">Email: ikashafira@email.com</a>
+        <a href="https://linkedin.com/in/ika-shafira" target="_blank" class="contact__item">LinkedIn</a>
+        <a href="https://github.com/ikashafira" target="_blank" class="contact__item">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Ika Shafira Salwadilla</p>
+    </div>
+  </footer>
+
+  <!-- ===== MODALS ===== -->
+  <!-- Modal 1 -->
+  <div id="proj1" class="modal" role="dialog" aria-modal="true" aria-labelledby="proj1-title" aria-hidden="true">
+    <div class="modal__panel">
+      <button class="modal__close" aria-label="Tutup" data-close>×</button>
+      <img src="images/proj1.jpg" alt="Smart Box Penerima Paket" class="modal__img" onerror="this.style.display='none'"/>
+      <h3 id="proj1-title" class="modal__title">Smart Box Penerima Paket</h3>
+      <p class="modal__text">
+        Sistem IoT untuk mencegah paket hilang: kamera ESP32-CAM, verifikasi wajah/QR, log otomatis, dan notifikasi Telegram.
+        Stack: Raspberry Pi, Python, MQTT, ESP32-CAM.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="proj2" class="modal" role="dialog" aria-modal="true" aria-labelledby="proj2-title" aria-hidden="true">
+    <div class="modal__panel">
+      <button class="modal__close" aria-label="Tutup" data-close>×</button>
+      <img src="images/proj2.jpg" alt="Website Check-in" class="modal__img" onerror="this.style.display='none'"/>
+      <h3 id="proj2-title" class="modal__title">Website Check-in</h3>
+      <p class="modal__text">
+        Aplikasi check-in tamu: form sederhana, penyimpanan data, dan dashboard ringkas.
+        Stack: Laravel, Blade, MySQL.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div id="proj3" class="modal" role="dialog" aria-modal="true" aria-labelledby="proj3-title" aria-hidden="true">
+    <div class="modal__panel">
+      <button class="modal__close" aria-label="Tutup" data-close>×</button>
+      <img src="images/proj3.jpg" alt="Smart Home Mini" class="modal__img" onerror="this.style.display='none'"/>
+      <h3 id="proj3-title" class="modal__title">Smart Home Mini</h3>
+      <p class="modal__text">
+        Kendali perangkat rumah via suara: mapping perintah → aksi perangkat, logging, dan mode hemat.
+        Stack: NodeMCU (ESP8266), Google Assistant (Nest Mini).
+      </p>
+    </div>
+  </div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Smooth scroll global (CSS juga aktif)
+    // Toggle navbar mobile
+    const toggle = document.querySelector('.nav__toggle');
+    const menu = document.querySelector('#nav-menu');
+    toggle.addEventListener('click', () => {
+      const opened = menu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
+    });
+    // Tutup menu saat klik link
+    document.querySelectorAll('.nav__link').forEach(a => {
+      a.addEventListener('click', () => menu.classList.remove('is-open'));
+    });
+
+    // Modal logic
+    const openers = document.querySelectorAll('[data-modal-target]');
+    const closeBtns = document.querySelectorAll('[data-close]');
+    const body = document.body;
+
+    function openModal(el) {
+      el.classList.add('is-open');
+      el.setAttribute('aria-hidden', 'false');
+      body.style.overflow = 'hidden'; // kunci scroll belakang
+    }
+    function closeModal(el) {
+      el.classList.remove('is-open');
+      el.setAttribute('aria-hidden', 'true');
+      body.style.overflow = '';
+    }
+
+    openers.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const sel = btn.getAttribute('data-modal-target');
+        const modal = document.querySelector(sel);
+        if (modal) openModal(modal);
+      });
+    });
+
+    closeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const modal = btn.closest('.modal');
+        closeModal(modal);
+      });
+    });
+
+    // Klik di overlay menutup modal
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal(modal);
+      });
+    });
+
+    // ESC untuk menutup
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal.is-open').forEach(m => closeModal(m));
+      }
+    });
+  </script>
+</body>
+</html>
