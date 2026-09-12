@@ -1,231 +1,1090 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portofolio Ika Shafira Salwadilla</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <!-- ===== NAVBAR ===== -->
-  <header class="nav">
-    <div class="container nav__inner">
-      <a href="#home" class="nav__brand">Ika<span>Porto</span></a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <button class="nav__toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-menu">
+  <title>Ika Shafira Salwadilla | Web Developer</title>
+
+  <meta
+    name="description"
+    content="Portfolio Ika Shafira Salwadilla, fresh graduate Teknologi Rekayasa Internet dan Web Developer."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+
+      <a href="#home" class="logo">
+        Ika<span>Porto</span></span>.</span>
+      </a>
+
+      <button
+        class="navbar__toggle"
+        type="button"
+        aria-label="Buka menu"
+        aria-expanded="false"
+      >
         ☰
       </button>
 
-      <ul id="nav-menu" class="nav__menu">
-        <li><a class="nav__link" href="#about">Tentang</a></li>
-        <li><a class="nav__link" href="#skills">Keahlian</a></li>
-        <li><a class="nav__link" href="#projects">Proyek</a></li>
-        <li><a class="nav__link" href="#contact">Kontak</a></li>
-      </ul>
+      <nav class="navbar__nav">
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#projects">Proyek</a>
+        <a href="#education">Pendidikan</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+
+      <a 
+        href="files/CV_Ika_Shafira_Salwadilla.pdf"
+        class="navbar__button"
+        target="_blank">
+        Download CV
+      </a>
+
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section id="home" class="hero">
-    <div class="container hero__inner">
-      <img src="images/foto-profil.jpg" alt="Foto Profil Ika" class="avatar" />
-      <div class="hero__text">
-        <h1>Halo, saya <span>Ika Shafira Salwadilla</span></h1>
-        <p>Mahasiswi Teknologi Rekayasa Internet | Adaptif, kolaboratif, dan suka belajar hal baru.</p>
-        <div class="hero__cta">
-          <a href="#projects" class="btn">Lihat Proyek</a>
-          <a href="#contact" class="btn btn--ghost">Hubungi Saya</a>
+
+  <main>
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="hero">
+
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+
+          <p class="hero__label">
+            WEB DEVELOPER · FRESH GRADUATE
+          </p>
+
+          <h1>
+            Membuat ide,
+            <span>menjadi sesuatu</span>
+            <span>yang bisa digunakan.</span>
+          </h1>
+
+          <p class="hero__description">
+            Halo, saya <strong>Ika Shafira Salwadilla</strong>,
+            fresh graduate D4 Teknologi Rekayasa Internet dari
+            Politeknik Elektronika Negeri Surabaya.
+          </p>
+
+          <p class="hero__description">
+            Saya memiliki pengalaman satu tahun sebagai Web Developer
+            Intern dan tertarik pada pengembangan aplikasi web,
+            database, API, serta teknologi IoT.
+          </p>
+
+          <div class="hero__actions">
+
+            <a href="#projects" class="button button--primary">
+              Lihat Proyek
+              <span>↓</span>
+            </a>
+
+            <a href="#about" class="button button--text">
+              Tentang Saya →
+            </a>
+
+          </div>
+
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section__title">✨ Tentang Saya</h2>
-      <p class="section__lead">
-        Saya, Ika Shafira Salwadilla, adalah seorang mahasiswa di program studi Teknologi Rekayasa Internet.
-        Dalam studi saya, saya mempelajari berbagai aspek teknologi, mulai dari pengembangan jaringan,
-        keamanan siber, hingga Internet of Things (IoT) dan implementasi sistem cerdas. Saya memiliki
-        kemampuan adaptasi yang tinggi, sehingga mampu berbaur dengan cepat di lingkungan baru dan
-        bekerja sama dengan baik dalam tim.
-      </p>
-    </div>
-  </section>
 
-  <!-- ===== SKILLS ===== -->
-  <section id="skills" class="section section--alt">
-    <div class="container">
-      <h2 class="section__title">🛠️ Keahlian</h2>
-      <ul class="chips">
-        <li class="chip">HTML</li>
-        <li class="chip">CSS</li>
-        <li class="chip">JavaScript</li>
-        <li class="chip">PHP</li>
-        <li class="chip">Laravel</li>
-        <li class="chip">MySQL</li>
-        <li class="chip">IoT (ESP32, Raspberry Pi)</li>
-      </ul>
-    </div>
-  </section>
+        <div class="hero__visual">
 
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section__title">📂 Proyek</h2>
+          <div class="hero__image-box">
 
-      <div class="grid">
-        <!-- Card 1 -->
-        <button class="card" data-modal-target="#proj1">
-          <img src="images/proj1.jpg" alt="Smart Box IoT" class="card__img" onerror="this.style.display='none'"/>
-          <div class="card__body">
-            <h3 class="card__title">Semester 4</h3>
-            <p class="card__desc">PostTest pada semester 4</p>
-            <span class="card__more">Lihat detail →</span>
+            <div class="hero__image-number">
+              01
+            </div>
+
+            <img
+              src="images/foto-profil.jpg"
+              alt="Foto profil Ika Shafira Salwadilla"
+            >
+
           </div>
-        </button>
 
-        <!-- Card 2 -->
-        <button class="card" data-modal-target="#proj2">
-          <img src="images/proj2.jpg" alt="Website Check-in" class="card__img" onerror="this.style.display='none'"/>
-          <div class="card__body">
-            <h3 class="card__title">Website Check-in</h3>
-            <p class="card__desc">Aplikasi web sederhana untuk pencatatan tamu pada acara PialaByu(Laravel + MySQL).</p>
-            <span class="card__more">Lihat detail →</span>
+          <div class="hero__caption">
+            <span></span>
+            Web · IoT · Problem Solving
           </div>
-        </button>
 
-        <!-- Card 3 -->
-        <button class="card" data-modal-target="#proj3">
-          <img src="images/proj3.jpg" alt="Smart Home" class="card__img" onerror="this.style.display='none'"/>
-          <div class="card__body">
-            <h3 class="card__title">Website Perjalanan Dinas</h3>
-            <p class="card__desc">Pada magang membuat website seperti traveloka untuk perjalanan dinas pegawai</p>
-            <span class="card__more">Lihat detail →</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section">
+
+      <div class="container">
+
+        <div class="section__top">
+
+          <p class="section__number">
+            01
+          </p>
+
+          <p class="section__label">
+            TENTANG SAYA
+          </p>
+
+        </div>
+
+
+        <div class="about">
+
+          <div class="about__title">
+
+            <h2>
+              Saya suka mengubah
+              <span>ide menjadi sistem.</span>
+            </h2>
+
           </div>
-        </button>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section section--alt">
-    <div class="container">
-      <h2 class="section__title">📧 Kontak</h2>
-      <p class="section__lead">Terbuka untuk kolaborasi, magang, maupun freelance.</p>
-      <div class="contact__grid">
-        <a href="mailto:ikashafira@email.com" class="contact__item">Email: shafirasal03@gmail.com</a>
-        <a href="https://linkedin.com/in/ika-shafira" target="_blank" class="contact__item">LinkedIn</a>
-        <a href="https://github.com/ikashafira" target="_blank" class="contact__item">GitHub</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== FOOTER ===== -->
+          <div class="about__content">
+
+            <p>
+              Selama menempuh pendidikan di Teknologi Rekayasa Internet,
+              saya mempelajari pengembangan aplikasi web, database,
+              Internet of Things, API, serta implementasi sistem berbasis
+              perangkat keras dan perangkat lunak.
+            </p>
+
+            <p>
+              Saya juga mendapatkan pengalaman profesional selama satu
+              tahun sebagai Web Developer Intern di PT Telkomsel Branch
+              Surabaya. Selama magang, saya terlibat dalam pengembangan
+              dan maintenance beberapa aplikasi berbasis web, termasuk
+              penyesuaian fitur, database, testing, dan perbaikan bug.
+            </p>
+
+            <div class="about__facts">
+
+              <div>
+                <strong>D4</strong>
+                <span>Teknologi Rekayasa Internet</span>
+              </div>
+
+              <div>
+                <strong>3.65</strong>
+                <span>IPK / 4.00</span>
+              </div>
+
+              <div>
+                <strong>1+</strong>
+                <span>Tahun pengalaman magang</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section section--dark">
+
+      <div class="container">
+
+        <div class="section__top section__top--dark">
+
+          <p class="section__number">
+            02
+          </p>
+
+          <p class="section__label">
+            KEAHLIAN
+          </p>
+
+        </div>
+
+
+        <div class="skills__heading">
+
+          <h2>
+            Tools & teknologi
+            <span>yang saya gunakan.</span>
+          </h2>
+
+          <p>
+            Teknologi yang saya gunakan selama kuliah,
+            project, dan pengalaman magang.
+          </p>
+
+        </div>
+
+
+        <div class="skills">
+
+          <div class="skill">
+
+            <div class="skill__number">
+              01
+            </div>
+
+            <div class="skill__content">
+
+              <h3>
+                Web Development
+              </h3>
+
+              <div class="skill__tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>Laravel</span>
+                <span>Bootstrap</span>
+                <span>Tailwind CSS</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <div class="skill__number">
+              02
+            </div>
+
+            <div class="skill__content">
+
+              <h3>
+                Database & API
+              </h3>
+
+              <div class="skill__tags">
+
+                <span>MySQL</span>
+                <span>REST API</span>
+                <span>API Integration</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <div class="skill__number">
+              03
+            </div>
+
+            <div class="skill__content">
+
+              <h3>
+                IoT & Programming
+              </h3>
+
+              <div class="skill__tags">
+
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>Raspberry Pi</span>
+                <span>IoT</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section id="experience" class="section">
+
+      <div class="container">
+
+        <div class="section__top">
+
+          <p class="section__number">
+            03
+          </p>
+
+          <p class="section__label">
+            PENGALAMAN
+          </p>
+
+        </div>
+
+
+        <div class="experience">
+
+          <div class="experience__intro">
+
+            <p class="experience__period">
+              2024 — 2025
+            </p>
+
+            <p class="experience__duration">
+              1 YEAR
+            </p>
+
+          </div>
+
+
+          <div class="experience__content">
+
+            <p class="experience__company">
+              PT Telkomsel · Branch Surabaya
+            </p>
+
+            <h2>
+              Web Developer Intern
+            </h2>
+
+            <p class="experience__description">
+              Terlibat dalam pengembangan dan maintenance aplikasi
+              berbasis web untuk kebutuhan internal dan bisnis.
+            </p>
+
+
+            <div class="experience__work">
+
+              <article>
+
+                <span>01</span>
+
+                <div>
+
+                  <h3>
+                    Sponsor Intake Website
+                  </h3>
+
+                  <p>
+                    Website untuk mengumpulkan informasi dan kebutuhan
+                    calon sponsor sebelum proses tindak lanjut.
+                  </p>
+
+                </div>
+
+              </article>
+
+
+              <article>
+
+                <span>02</span>
+
+                <div>
+
+                  <h3>
+                    Employee Travel Ordering
+                  </h3>
+
+                  <p>
+                    Website untuk membantu proses pemesanan perjalanan
+                    dinas pegawai melalui sistem internal.
+                  </p>
+
+                </div>
+
+              </article>
+
+
+              <article>
+
+                <span>03</span>
+
+                <div>
+
+                  <h3>
+                    BlanjaPoin
+                  </h3>
+
+                  <p>
+                    Maintenance dan penyesuaian fitur aplikasi,
+                    pengelolaan database, testing, serta perbaikan bug.
+                  </p>
+
+                </div>
+
+              </article>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section section--light">
+
+      <div class="container">
+
+        <div class="section__top">
+
+          <p class="section__number">
+            04
+          </p>
+
+          <p class="section__label">
+            PROYEK
+          </p>
+
+        </div>
+
+
+        <div class="projects__heading">
+
+          <div>
+
+            <h2>
+              Beberapa hal yang
+              <span>pernah saya bangun.</span>
+            </h2>
+
+          </div>
+
+          <p>
+            Project kuliah, project pribadi, dan pengalaman
+            pengembangan selama magang.
+          </p>
+
+        </div>
+
+
+        <div class="projects">
+
+
+          <!-- PROJECT 1 -->
+
+          <article class="project project--featured">
+
+            <div class="project__image">
+
+              <img
+                src="images/proj1.jpg"
+                alt="Smart Box IoT"
+              >
+
+              <span>
+                01
+              </span>
+
+            </div>
+
+
+            <div class="project__content">
+
+              <p class="project__category">
+                FINAL PROJECT · IoT · WEB
+              </p>
+
+              <h3>
+                Smart Box
+              </h3>
+
+              <p>
+                Sistem penerimaan paket otomatis berbasis IoT
+                dengan autentikasi QR Code dan face recognition.
+              </p>
+
+              <div class="project__tags">
+
+                <span>Laravel</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Python</span>
+                <span>Raspberry Pi</span>
+
+              </div>
+
+              <a href="#" class="project__link">
+                Lihat detail proyek →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 2 -->
+
+          <article class="project">
+
+            <div class="project__image">
+
+              <img
+                src="images/proj2.jpg"
+                alt="Website Check-in"
+              >
+
+              <span>
+                02
+              </span>
+
+            </div>
+
+
+            <div class="project__content">
+
+              <p class="project__category">
+                WEB DEVELOPMENT
+              </p>
+
+              <h3>
+                Website Check-in
+              </h3>
+
+              <p>
+                Aplikasi web untuk pencatatan tamu pada acara
+                PialaByU dengan penyimpanan data dan dashboard.
+              </p>
+
+              <div class="project__tags">
+
+                <span>Laravel</span>
+                <span>Blade</span>
+                <span>MySQL</span>
+
+              </div>
+
+              <a href="#" class="project__link">
+                Lihat detail proyek →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 3 -->
+
+          <article class="project">
+
+            <div class="project__image">
+
+              <img
+                src="images/proj3.jpg"
+                alt="Employee Travel Ordering"
+              >
+
+              <span>
+                03
+              </span>
+
+            </div>
+
+
+            <div class="project__content">
+
+              <p class="project__category">
+                INTERNSHIP · WEB DEVELOPMENT
+              </p>
+
+              <h3>
+                Employee Travel Ordering
+              </h3>
+
+              <p>
+                Website untuk membantu proses pemesanan tiket
+                perjalanan dinas pegawai melalui sistem internal.
+              </p>
+
+              <div class="project__tags">
+
+                <span>Web</span>
+                <span>Database</span>
+                <span>Admin</span>
+
+              </div>
+
+              <a href="#" class="project__link">
+                Lihat detail proyek →
+              </a>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+
+        <div class="projects__bottom">
+
+          <p>
+            Lebih banyak project akan ditambahkan.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section">
+
+      <div class="container">
+
+        <div class="section__top">
+
+          <p class="section__number">
+            05
+          </p>
+
+          <p class="section__label">
+            PENDIDIKAN
+          </p>
+
+        </div>
+
+
+        <div class="education">
+
+          <div class="education__year">
+            2021 — 2025
+          </div>
+
+
+          <div class="education__content">
+
+            <p class="education__institution">
+              POLITEKNIK ELEKTRONIKA NEGERI SURABAYA
+            </p>
+
+            <h2>
+              D4 Teknologi Rekayasa Internet
+            </h2>
+
+            <p class="education__gpa">
+              IPK <strong>3.65 / 4.00</strong>
+            </p>
+
+
+            <div class="education__final">
+
+              <p>
+                FINAL PROJECT
+              </p>
+
+              <h3>
+                Rancang Bangun Smart Box Berbasis IoT dengan
+                Autentikasi Face Recognition untuk Sistem
+                Penerimaan Paket Otomatis
+              </h3>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CERTIFICATION ================= -->
+
+    <section class="section section--light">
+
+      <div class="container">
+
+        <div class="section__top">
+
+          <p class="section__number">
+            06
+          </p>
+
+          <p class="section__label">
+            SERTIFIKASI & PENCAPAIAN
+          </p>
+
+        </div>
+
+
+        <div class="credentials">
+
+          <article class="credential">
+
+            <span>01</span>
+
+            <div>
+
+              <p class="credential__type">
+                SERTIFIKASI KOMPETENSI
+              </p>
+
+              <h3>
+                Insinyur Cloud Computing
+              </h3>
+
+              <p>
+                BNSP · Sertifikasi Kompetensi TIK
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="credential">
+
+            <span>02</span>
+
+            <div>
+
+              <p class="credential__type">
+                FINAL PROJECT COMPETITION
+              </p>
+
+              <h3>
+                Final Project Competition
+              </h3>
+
+              <p>
+                Presentasi dan pameran hasil proyek akhir.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="credential">
+
+            <span>03</span>
+
+            <div>
+
+              <p class="credential__type">
+                LANGUAGE
+              </p>
+
+              <h3>
+                TOEFL
+              </h3>
+
+              <p>
+                Listening Test
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ORGANIZATION ================= -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section__top">
+
+          <p class="section__number">
+            07
+          </p>
+
+          <p class="section__label">
+            ORGANISASI & KEGIATAN
+          </p>
+
+        </div>
+
+
+        <div class="activities">
+
+
+          <article class="activity">
+
+            <div class="activity__year">
+              2024
+            </div>
+
+            <div>
+
+              <p class="activity__organization">
+                LMB PENS
+              </p>
+
+              <h3>
+                Kepala Departemen Eksternal
+              </h3>
+
+              <p>
+                Mengelola hubungan eksternal dan koordinasi
+                dengan organisasi mahasiswa serta UKM di lingkungan PENS.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="activity">
+
+            <div class="activity__year">
+              2023
+            </div>
+
+            <div>
+
+              <p class="activity__organization">
+                LMB PENS
+              </p>
+
+              <h3>
+                Staff Muda Departemen Eksternal
+              </h3>
+
+              <p>
+                Mendukung kegiatan dan hubungan eksternal organisasi.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="activity">
+
+            <div class="activity__year">
+              2023
+            </div>
+
+            <div>
+
+              <p class="activity__organization">
+                IONIC & TRI Expo
+              </p>
+
+              <h3>
+                Treasurer
+              </h3>
+
+              <p>
+                Terlibat dalam pengelolaan kebutuhan keuangan
+                dan operasional kegiatan.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="activity">
+
+            <div class="activity__year">
+              2023 — 2024
+            </div>
+
+            <div>
+
+              <p class="activity__organization">
+                PENS
+              </p>
+
+              <h3>
+                Committee & Event Activities
+              </h3>
+
+              <p>
+                Terlibat dalam berbagai kegiatan kampus seperti
+                PKP PKM, KMIPN, dan PENSCOMP.
+              </p>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+      <div class="container">
+
+        <div class="section__top section__top--dark">
+
+          <p class="section__number">
+            08
+          </p>
+
+          <p class="section__label">
+            KONTAK
+          </p>
+
+        </div>
+
+
+        <h2>
+          Mari bekerja
+          <span>bersama.</span>
+        </h2>
+
+        <p class="contact__description">
+          Terbuka untuk kesempatan kerja, kolaborasi,
+          maupun project yang berkaitan dengan web development.
+        </p>
+
+
+        <div class="contact__links">
+
+          <a href="mailto:shafirasal03@gmail.com">
+
+            <span>
+              Email
+            </span>
+
+            shafirasal03@gmail.com
+
+          </a>
+
+
+          <a
+            href="https://linkedin.com/in/ika-shafira"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <span>
+              LinkedIn
+            </span>
+
+            LinkedIn Profile
+
+          </a>
+
+
+          <a
+            href="https://github.com/ikashafira"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <span>
+              GitHub
+            </span>
+
+            GitHub Profile
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
   <footer class="footer">
-    <div class="container">
-      <p>© 2025 Ika Shafira Salwadilla</p>
+
+    <div class="container footer__inner">
+
+      <p>
+        © 2026 Ika Shafira Salwadilla
+      </p>
+
+      <a href="#home">
+        Kembali ke atas ↑
+      </a>
+
     </div>
+
   </footer>
 
-  <!-- ===== MODALS ===== -->
-  <!-- Modal 1 -->
-  <div id="proj1" class="modal" role="dialog" aria-modal="true" aria-labelledby="proj1-title" aria-hidden="true">
-    <div class="modal__panel">
-      <button class="modal__close" aria-label="Tutup" data-close>×</button>
-      <img src="images/proj1.jpg" alt="Smart Box Penerima Paket" class="modal__img" onerror="this.style.display='none'"/>
-      <h3 id="proj1-title" class="modal__title">Semester 4</h3>
-      <p class="modal__text">
-        Pada semester 4 mendapat postest menggunakan ultrasonic.
-      </p>
-    </div>
-  </div>
 
-  <!-- Modal 2 -->
-  <div id="proj2" class="modal" role="dialog" aria-modal="true" aria-labelledby="proj2-title" aria-hidden="true">
-    <div class="modal__panel">
-      <button class="modal__close" aria-label="Tutup" data-close>×</button>
-      <img src="images/proj2.jpg" alt="Website Check-in" class="modal__img" onerror="this.style.display='none'"/>
-      <h3 id="proj2-title" class="modal__title">Website Check-in</h3>
-      <p class="modal__text">
-        Aplikasi check-in tamu: form sederhana, penyimpanan data, dan dashboard ringkas.
-        Stack: Laravel, Blade, MySQL.
-      </p>
-    </div>
-  </div>
+  <!-- ================= JAVASCRIPT ================= -->
 
-  <!-- Modal 3 -->
-  <div id="proj3" class="modal" role="dialog" aria-modal="true" aria-labelledby="proj3-title" aria-hidden="true">
-    <div class="modal__panel">
-      <button class="modal__close" aria-label="Tutup" data-close>×</button>
-      <img src="images/proj3.jpg" alt="Smart Home Mini" class="modal__img" onerror="this.style.display='none'"/>
-      <h3 id="proj3-title" class="modal__title">Perjalanan Dinas</h3>
-      <p class="modal__text">
-        Seperti traveloka yang dapat memesan tiket pesawat, hotel, maupun kereta untuk perjalanan dinas pegawai, dan melalui admin.
-      </p>
-    </div>
-  </div>
-
-  <!-- ===== SCRIPTS ===== -->
   <script>
-    // Smooth scroll global (CSS juga aktif)
-    // Toggle navbar mobile
-    const toggle = document.querySelector('.nav__toggle');
-    const menu = document.querySelector('#nav-menu');
-    toggle.addEventListener('click', () => {
-      const opened = menu.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
+
+    const toggle = document.querySelector(".navbar__toggle");
+    const nav = document.querySelector(".navbar__nav");
+
+    toggle.addEventListener("click", function () {
+
+      const isOpen = nav.classList.toggle("is-open");
+
+      toggle.setAttribute(
+        "aria-expanded",
+        isOpen ? "true" : "false"
+      );
+
     });
-    // Tutup menu saat klik link
-    document.querySelectorAll('.nav__link').forEach(a => {
-      a.addEventListener('click', () => menu.classList.remove('is-open'));
-    });
 
-    // Modal logic
-    const openers = document.querySelectorAll('[data-modal-target]');
-    const closeBtns = document.querySelectorAll('[data-close]');
-    const body = document.body;
 
-    function openModal(el) {
-      el.classList.add('is-open');
-      el.setAttribute('aria-hidden', 'false');
-      body.style.overflow = 'hidden'; // kunci scroll belakang
-    }
-    function closeModal(el) {
-      el.classList.remove('is-open');
-      el.setAttribute('aria-hidden', 'true');
-      body.style.overflow = '';
-    }
+    document.querySelectorAll(".navbar__nav a").forEach(link => {
 
-    openers.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const sel = btn.getAttribute('data-modal-target');
-        const modal = document.querySelector(sel);
-        if (modal) openModal(modal);
+      link.addEventListener("click", function () {
+
+        nav.classList.remove("is-open");
+
+        toggle.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
       });
+
     });
 
-    closeBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const modal = btn.closest('.modal');
-        closeModal(modal);
-      });
-    });
-
-    // Klik di overlay menutup modal
-    document.querySelectorAll('.modal').forEach(modal => {
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) closeModal(modal);
-      });
-    });
-
-    // ESC untuk menutup
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.modal.is-open').forEach(m => closeModal(m));
-      }
-    });
   </script>
+
 </body>
 </html>
