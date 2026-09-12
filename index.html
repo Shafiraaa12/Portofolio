@@ -75,15 +75,7 @@
           </h1>
 
           <p class="hero__description">
-            Halo, saya <strong>Ika Shafira Salwadilla</strong>,
-            fresh graduate D4 Teknologi Rekayasa Internet dari
-            Politeknik Elektronika Negeri Surabaya.
-          </p>
-
-          <p class="hero__description">
-            Saya memiliki pengalaman satu tahun sebagai Web Developer
-            Intern dan tertarik pada pengembangan aplikasi web,
-            database, API, serta teknologi IoT.
+            Halo, saya <strong>Ika Shafira Salwadilla</strong>, fresh graduate D4 Teknologi Rekayasa Internet dari Politeknik Elektronika Negeri Surabaya yang memiliki pengalaman dalam pengembangan aplikasi web.
           </p>
 
           <div class="hero__actions">
@@ -93,8 +85,16 @@
               <span>↓</span>
             </a>
 
-            <a href="#about" class="button button--text">
+            <a href="#about" class="button button--text hero__about">
               Tentang Saya →
+            </a>
+
+            <a
+              href="files/CV_Ika_Shafira_Salwadilla.pdf"
+              target="_blank"
+              class="button button--text hero__cv"
+            >
+               Download CV ↓
             </a>
 
           </div>
@@ -150,32 +150,48 @@
 
         <div class="about">
 
-          <div class="about__title">
-
-            <h2>
-              Saya suka mengubah
-              <span>ide menjadi sistem.</span>
-            </h2>
-
+           <!-- FOTO -->
+          <div class="about__visual">
+            <div class="about__image-box">
+              <img
+                src="images/foto-profil1.jpg"
+                alt="Foto Ika Shafira Salwadilla"
+              >
+            </div>
           </div>
 
 
           <div class="about__content">
-
-            <p>
-              Selama menempuh pendidikan di Teknologi Rekayasa Internet,
-              saya mempelajari pengembangan aplikasi web, database,
-              Internet of Things, API, serta implementasi sistem berbasis
-              perangkat keras dan perangkat lunak.
+            <p class="about__text">
+              Saya merupakan fresh graduate D4 Teknologi Rekayasa Internet dari
+              Politeknik Elektronika Negeri Surabaya dengan IPK 3,65/4,00.
+              Selama kuliah, saya mempelajari pemrograman, pengembangan aplikasi
+              berbasis web, database, jaringan komputer, serta Internet of Things (IoT).
             </p>
+            <div class="about__more" id="aboutMore">  
+              <p class="about__text">
+                Saya memiliki pengalaman satu tahun sebagai Web Developer Intern
+                di PT Telkomsel Branch Surabaya. Selama magang, saya terlibat dalam
+                pengembangan dan pemeliharaan website dan aplikasi, termasuk
+                pengembangan fitur, pengelolaan database, pengujian, dan perbaikan
+                kendala pada aplikasi.
+              </p>
+              <p class="about__text">
+                Selain pengembangan web, saya juga memiliki pengalaman mengembangkan
+                Smart Box berbasis IoT sebagai Tugas Akhir. Saya senang mempelajari
+                hal baru, bekerja dalam tim, dan terus mengembangkan kemampuan
+                dalam membangun aplikasi yang dapat digunakan dalam kebutuhan nyata.
+              </p>
+            </div>  
 
-            <p>
-              Saya juga mendapatkan pengalaman profesional selama satu
-              tahun sebagai Web Developer Intern di PT Telkomsel Branch
-              Surabaya. Selama magang, saya terlibat dalam pengembangan
-              dan maintenance beberapa aplikasi berbasis web, termasuk
-              penyesuaian fitur, database, testing, dan perbaikan bug.
-            </p>
+             <!-- Tombol -->
+            <button
+              type="button"
+              class="about__toggle"
+              id="aboutToggle"
+            >
+              Lihat selengkapnya <span>→</span>
+            </button>
 
             <div class="about__facts">
 
@@ -190,7 +206,7 @@
               </div>
 
               <div>
-                <strong>1+</strong>
+                <strong>1</strong>
                 <span>Tahun pengalaman magang</span>
               </div>
 
@@ -227,8 +243,8 @@
         <div class="skills__heading">
 
           <h2>
-            Tools & teknologi
-            <span>yang saya gunakan.</span>
+            Tools & 
+            <span> teknologi.</span>
           </h2>
 
           <p>
@@ -287,6 +303,7 @@
                 <span>MySQL</span>
                 <span>REST API</span>
                 <span>API Integration</span>
+                <span>Database Management</span>
 
               </div>
 
@@ -312,18 +329,53 @@
                 <span>Python</span>
                 <span>OpenCV</span>
                 <span>Raspberry Pi</span>
+                <span>Arduino</span>
                 <span>IoT</span>
-
+                <span>Face Recognition</span>
               </div>
-
             </div>
-
           </div>
+          <div class="skill">
+            <div class="skill__number">
+              04
+            </div>
+            <div class="skill__content">
 
+              <h3>
+                Design & Development Tools
+              </h3>
+              <div class="skill__tags">
+                <span>Figma</span>
+                <span>UI Design</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Testing</span>
+                <span>Debugging</span>
+                <span>Database Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__number">
+              05
+            </div>
+            <div class="skill__content">
+              <h3>
+                Soft Skills
+              </h3>
+              <div class="skill__tags">
+                <span>Teamwork</span>
+                <span>Communication</span>
+                <span>Problem Solving</span>
+                <span>Time Management</span>
+                <span>Project Management</span>
+                <span>Coordination</span>
+                <span>Adaptability</span>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
-
     </section>
 
 
@@ -340,7 +392,7 @@
           </p>
 
           <p class="section__label">
-            PENGALAMAN
+            PENGALAMAN MAGANG
           </p>
 
         </div>
@@ -351,11 +403,7 @@
           <div class="experience__intro">
 
             <p class="experience__period">
-              2024 — 2025
-            </p>
-
-            <p class="experience__duration">
-              1 YEAR
+            Januari 2025 - November 2025
             </p>
 
           </div>
@@ -372,73 +420,50 @@
             </h2>
 
             <p class="experience__description">
-              Terlibat dalam pengembangan dan maintenance aplikasi
-              berbasis web untuk kebutuhan internal dan bisnis.
-            </p>
+    Mengikuti program InLife Internship selama dua periode dengan total
+    satu tahun, dengan terlibat dalam pengembangan dan maintenance
+    website serta aplikasi untuk kebutuhan internal maupun bisnis.
+  </p>
 
+            <ul class="experience__list">
 
-            <div class="experience__work">
+              <li>
+                 Selama mengikuti program InLife Internship, saya terlibat dalam
+    pengembangan dan maintenance beberapa website dan aplikasi untuk
+    mendukung kebutuhan internal maupun bisnis.
+              </li>
 
-              <article>
+      <li>
+         Dalam pengembangan website penerimaan sponsor, saya mengerjakan
+    bagian pengumpulan informasi dan kebutuhan calon sponsor sehingga
+    data dapat diterima sebelum proses komunikasi lebih lanjut.
+      </li>
 
-                <span>01</span>
+      <li>
+       Saya juga mengembangkan website pemesanan kebutuhan perjalanan dinas
+    karyawan, dengan alur pemesanan tiket dan kebutuhan perjalanan
+    yang dikelola melalui sistem admin.
+      </li>
 
-                <div>
+      <li>
+        Pada aplikasi BlanjaPoin, saya terlibat dalam pengembangan dan
+    maintenance fitur yang berkaitan dengan pengelolaan serta
+    penukaran poin.
+      </li>
+       <li>
+    Dalam proses pengembangan, saya melakukan penyesuaian fitur,
+    pengelolaan database, testing, debugging, dan perbaikan kendala
+    agar aplikasi dapat berjalan sesuai kebutuhan.
+  </li>
 
-                  <h3>
-                    Sponsor Intake Website
-                  </h3>
-
-                  <p>
-                    Website untuk mengumpulkan informasi dan kebutuhan
-                    calon sponsor sebelum proses tindak lanjut.
-                  </p>
-
-                </div>
-
-              </article>
-
-
-              <article>
-
-                <span>02</span>
-
-                <div>
-
-                  <h3>
-                    Employee Travel Ordering
-                  </h3>
-
-                  <p>
-                    Website untuk membantu proses pemesanan perjalanan
-                    dinas pegawai melalui sistem internal.
-                  </p>
-
-                </div>
-
-              </article>
-
-
-              <article>
-
-                <span>03</span>
-
-                <div>
-
-                  <h3>
-                    BlanjaPoin
-                  </h3>
-
-                  <p>
-                    Maintenance dan penyesuaian fitur aplikasi,
-                    pengelolaan database, testing, serta perbaikan bug.
-                  </p>
-
-                </div>
-
-              </article>
-
-            </div>
+    </ul>
+    <a
+    href="files/sertifikat_magang.pdf"
+    target="_blank"
+    class="experience__link"
+  >
+    Lihat sertifikat →
+  </a>
 
           </div>
 
@@ -680,7 +705,7 @@
         <div class="education">
 
           <div class="education__year">
-            2021 — 2025
+            2022 — 2026
           </div>
 
 
@@ -758,8 +783,20 @@
               </h3>
 
               <p>
-                BNSP · Sertifikasi Kompetensi TIK
+                BNSP · LSP PENS
               </p>
+               <small>
+        2025 — 2028
+      </small>
+
+
+              <a
+                href="files/sertifikat_BNSP.pdf"
+                target="_blank"
+                class="credential__link"
+              >
+              Lihat sertifikat →
+              </a>
 
             </div>
 
@@ -773,16 +810,26 @@
             <div>
 
               <p class="credential__type">
-                FINAL PROJECT COMPETITION
+                SERTIFIKASI BAHASA
               </p>
 
               <h3>
-                Final Project Competition
+                PENS English Proficiency Test (PEPT)
               </h3>
 
               <p>
-                Presentasi dan pameran hasil proyek akhir.
+                PENS Language and Culture Center
               </p>
+               <small>
+        2026 — 2028
+      </small>
+               <a
+        href="files/sertifikat_TOEFL.pdf"
+        target="_blank"
+        class="credential__link"
+      >
+        Lihat sertifikat →
+      </a>
 
             </div>
 
@@ -796,16 +843,35 @@
             <div>
 
               <p class="credential__type">
-                LANGUAGE
+                PENCAPAIAN
               </p>
 
               <h3>
-                TOEFL
+                Paper Accepted — iCAST-ES 2026
               </h3>
 
               <p>
-                Listening Test
+                 Design and Implementation of an IoT-Based Smart Box
+        with Face Recognition Authentication for an Automated
+        Package Receiving System
               </p>
+              <small>
+        2026
+      </small>
+              <a
+        href="files/bukti.pdf"
+        target="_blank"
+        class="credential__link"
+      >
+        Lihat bukti →
+      </a>
+      <a
+        href="files/paper.pdf"
+        target="_blank"
+        class="credential__link"
+      >
+        Lihat paper →
+      </a>
 
             </div>
 
@@ -820,134 +886,199 @@
 
     <!-- ================= ORGANIZATION ================= -->
 
-    <section class="section">
+    <!-- ================= ORGANIZATION ================= -->
 
-      <div class="container">
+<section class="section" id="organization">
 
-        <div class="section__top">
+  <div class="container">
 
-          <p class="section__number">
-            07
+    <div class="section__top">
+
+      <p class="section__number">
+        07
+      </p>
+
+      <p class="section__label">
+        ORGANISASI & KEGIATAN
+      </p>
+
+    </div>
+
+
+    <div class="activities">
+
+
+      <!-- LMB 2024 -->
+
+     <!-- LMB PENS -->
+
+<article class="activity">
+
+  <div class="activity__year">
+    2023 — 2024
+  </div>
+
+  <div class="activity__content">
+
+    <p class="activity__organization">
+      LMB PENS
+    </p>
+
+    <h3>
+      Departemen Eksternal
+    </h3>
+
+    <p>
+      Berproses dari Staff Muda hingga Kepala Departemen Eksternal
+      dalam pengelolaan kegiatan, koordinasi UKM, serta hubungan
+      dengan pihak kampus dan eksternal.
+    </p>
+
+    <a
+      href="kegiatan/lmb-2024.html"
+      class="activity__link"
+    >
+      Lihat kegiatan →
+    </a>
+
+  </div>
+
+</article>
+
+
+      <!-- PANITIA -->
+
+      <article class="activity activity--compact">
+
+        <div class="activity__year">
+          2023 — 2024
+        </div>
+
+        <div class="activity__content">
+
+          <p class="activity__organization">
+            KEPANITIAAN & KEGIATAN
           </p>
 
-          <p class="section__label">
-            ORGANISASI & KEGIATAN
-          </p>
+          <h3>
+            Berbagai Kegiatan Kampus
+          </h3>
+
+          <div class="activity__list">
+
+            <div>
+              <span>IONIC</span>
+              <small>Bendahara · 2023</small>
+            </div>
+
+            <div>
+              <span>TRI Expo</span>
+              <small>Bendahara · 2023</small>
+            </div>
+
+            <div>
+              <span>PKP PKM Vokasi</span>
+              <small>Tim Video Conference · 2023</small>
+            </div>
+
+            <div>
+              <span>KMIPN</span>
+              <small>LO Divisi Acara · 2023</small>
+            </div>
+
+            <div>
+              <span>PENSCOMP</span>
+              <small>Divisi Acara · 2023 & 2024</small>
+            </div>
+
+            <div>
+              <span>UKM Software Development</span>
+              <small>Anggota · 2024</small>
+            </div>
+
+          </div>
+
+          <a
+            href="files/panitia.pdf"
+            class="activity__link"
+          >
+            Lihat sertifikat →
+          </a>
 
         </div>
 
+      </article>
+      <div class="training-cards">
 
-        <div class="activities">
+  <article class="training-card">
 
+    <span>01</span>
 
-          <article class="activity">
+    <p class="training-card__type">
+      PELATIHAN
+    </p>
 
-            <div class="activity__year">
-              2024
-            </div>
+    <h3>
+      LKMM Pra Tingkat Dasar
+    </h3>
 
-            <div>
+    <p>
+      Latihan Keterampilan Manajemen Mahasiswa
+    </p>
 
-              <p class="activity__organization">
-                LMB PENS
-              </p>
+    <small>
+      2022
+    </small>
 
-              <h3>
-                Kepala Departemen Eksternal
-              </h3>
+    <a
+      href="files/sertifikat_lkmmpratd.pdf"
+      target="_blank"
+      class="training-card__link"
+    >
+      Lihat sertifikat →
+    </a>
 
-              <p>
-                Mengelola hubungan eksternal dan koordinasi
-                dengan organisasi mahasiswa serta UKM di lingkungan PENS.
-              </p>
-
-            </div>
-
-          </article>
-
-
-          <article class="activity">
-
-            <div class="activity__year">
-              2023
-            </div>
-
-            <div>
-
-              <p class="activity__organization">
-                LMB PENS
-              </p>
-
-              <h3>
-                Staff Muda Departemen Eksternal
-              </h3>
-
-              <p>
-                Mendukung kegiatan dan hubungan eksternal organisasi.
-              </p>
-
-            </div>
-
-          </article>
+  </article>
 
 
-          <article class="activity">
+  <article class="training-card">
 
-            <div class="activity__year">
-              2023
-            </div>
+    <span>02</span>
 
-            <div>
+    <p class="training-card__type">
+      PELATIHAN
+    </p>
 
-              <p class="activity__organization">
-                IONIC & TRI Expo
-              </p>
+    <h3>
+      LKMM Tingkat Dasar
+    </h3>
 
-              <h3>
-                Treasurer
-              </h3>
+    <p>
+      Latihan Keterampilan Manajemen Mahasiswa
+    </p>
 
-              <p>
-                Terlibat dalam pengelolaan kebutuhan keuangan
-                dan operasional kegiatan.
-              </p>
+    <small>
+      2023
+    </small>
 
-            </div>
+    <a
+      href="files/sertifikat-lkmm-td.pdf"
+      target="_blank"
+      class="training-card__link"
+    >
+      Lihat sertifikat →
+    </a>
 
-          </article>
+  </article>
 
-
-          <article class="activity">
-
-            <div class="activity__year">
-              2023 — 2024
-            </div>
-
-            <div>
-
-              <p class="activity__organization">
-                PENS
-              </p>
-
-              <h3>
-                Committee & Event Activities
-              </h3>
-
-              <p>
-                Terlibat dalam berbagai kegiatan kampus seperti
-                PKP PKM, KMIPN, dan PENSCOMP.
-              </p>
-
-            </div>
-
-          </article>
+</div>
 
 
-        </div>
+    </div>
 
-      </div>
+  </div>
 
-    </section>
+</section>
 
 
     <!-- ================= CONTACT ================= -->
@@ -975,8 +1106,7 @@
         </h2>
 
         <p class="contact__description">
-          Terbuka untuk kesempatan kerja, kolaborasi,
-          maupun project yang berkaitan dengan web development.
+          Siap memulai karier di bidang teknologi, mengembangkan kemampuan, dan memberikan kontribusi melalui keterampilan yang saya miliki.
         </p>
 
 
@@ -993,34 +1123,35 @@
           </a>
 
 
+           <a
+        href="https://wa.me/6282335116727"
+        target="_blank"
+        rel="noopener"
+      >
+
+        <span>
+          WhatsApp
+        </span>
+
+        082335116727
+
+      </a>
+
+
+
           <a
-            href="https://linkedin.com/in/ika-shafira"
-            target="_blank"
-            rel="noopener"
-          >
+        href="https://instagram.com/ikaaarl_"
+        target="_blank"
+        rel="noopener"
+      >
 
-            <span>
-              LinkedIn
-            </span>
+        <span>
+          Instagram
+        </span>
 
-            LinkedIn Profile
+        @Ikaaarl_
 
-          </a>
-
-
-          <a
-            href="https://github.com/ikashafira"
-            target="_blank"
-            rel="noopener"
-          >
-
-            <span>
-              GitHub
-            </span>
-
-            GitHub Profile
-
-          </a>
+      </a>
 
         </div>
 
@@ -1083,6 +1214,26 @@
       });
 
     });
+
+    // About - Lihat selengkapnya
+
+    const aboutToggle = document.getElementById('aboutToggle');
+    const aboutMore = document.getElementById('aboutMore');
+
+    if (aboutToggle && aboutMore) {
+
+      aboutToggle.addEventListener("click", function () {
+        aboutMore.classList.toggle("is-open");
+        if (aboutMore.classList.contains("is-open")) {
+
+          aboutToggle.innerHTML =
+            'Tutup <span>↑</span>';
+        } else {
+          aboutToggle.innerHTML =
+            'Lihat selengkapnya <span>→</span>';
+        }
+      });
+    }
 
   </script>
 
