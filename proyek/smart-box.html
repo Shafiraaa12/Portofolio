@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Smart Box — Tugas Akhir</title>
+
+  <link
+    rel="stylesheet"
+    href="../css/style.css"
+  >
+
+</head>
+
+
+<body>
+
+  <header class="detail-header">
+
+    <div class="container">
+
+      <a
+        href="../index.html#projects"
+        class="detail-back"
+      >
+        ← Kembali 
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- ================= PROJECT ================= -->
+
+    <section class="project-detail">
+
+      <div class="container">
+
+        <div class="project-detail__top">
+
+          <p class="section__label">
+            TUGAS AKHIR
+          </p>
+
+        </div>
+
+
+        <div class="project-detail__heading">
+
+          <h1>
+            Rancang Bangun Smart Box Berbasis IoT
+            <span> dengan Autentikasi Face Recognition untuk Sistem Penerimaan Paket Otomatis</span>
+          </h1>
+
+          <p>
+            Sistem penerimaan paket otomatis untuk lingkungan
+            indekos dengan autentikasi penghuni dan akses kurir.
+          </p>
+
+
+          <div class="project-detail__links">
+
+            <a
+              href="../files/poster.pdf"
+              target="_blank"
+            >
+              Lihat poster →
+            </a>
+
+            <a
+              href="../files/bukuPA.pdf"
+              target="_blank"
+            >
+              Lihat laporan →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="project-detail__section">
+
+      <div class="container">
+
+        <div class="project-detail__grid">
+
+          <div>
+
+            <p class="project-detail__label">
+              LATAR BELAKANG
+            </p>
+
+            <h2>
+              Penerimaan paket yang lebih aman
+            </h2>
+
+          </div>
+
+
+          <div class="project-detail__text">
+
+            <p>
+              Proses penerimaan paket di lingkungan indekos masih
+              sering dilakukan secara manual, terutama ketika
+              penghuni tidak berada di tempat. Kondisi ini dapat
+              meningkatkan risiko paket hilang, tertukar, atau
+              diambil oleh pihak yang tidak berwenang.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-detail__grid project-detail__grid--second">
+
+          <div>
+
+            <p class="project-detail__label">
+              TUJUAN
+            </p>
+
+            <h2>
+              Otomatis & mudah dipantau
+            </h2>
+
+          </div>
+
+
+          <div class="project-detail__text">
+
+            <p>
+              Proyek ini bertujuan membangun smart box berbasis
+              Raspberry Pi yang dapat meningkatkan keamanan dan
+              efisiensi penerimaan paket melalui face recognition,
+              QR Code, sensor, website, dan notifikasi Telegram.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SYSTEM ================= -->
+
+<section class="project-detail__section project-detail__section--soft">
+
+  <div class="container">
+
+    <div class="project-detail__heading-small">
+
+      <p class="project-detail__label">
+        PERANCANGAN SISTEM
+      </p>
+
+      <h2>
+        Rancangan & Arsitektur Sistem
+      </h2>
+
+    </div>
+
+
+    <div class="diagram-grid">
+
+
+      <!-- 01 USE CASE -->
+
+      <article class="diagram-card">
+
+        <button
+          class="diagram-card__image"
+          onclick="openModal('../images/usecase.jpeg', 'Use Case Smart Box')"
+        >
+
+          <img
+            src="../images/usecase.jpeg"
+            alt="Use Case Smart Box"
+          >
+
+        </button>
+
+        <div class="diagram-card__content">
+
+          <span>01</span>
+
+          <h3>
+            Use Case
+          </h3>
+
+          <p>
+            Menggambarkan interaksi Admin, Penghuni,
+            dan Kurir dalam sistem Smart Box.
+          </p>
+
+          <details>
+
+            <summary>
+              Lihat detail
+            </summary>
+
+            <p>
+              Kurir melakukan autentikasi menggunakan QR Code,
+              sedangkan penghuni menggunakan pengenalan wajah.
+              Admin berperan dalam pengelolaan sistem dan
+              pemantauan aktivitas.
+            </p>
+
+          </details>
+
+        </div>
+
+      </article>
+
+
+      <!-- 02 BLOK DIAGRAM -->
+
+      <article class="diagram-card">
+
+        <button
+          class="diagram-card__image"
+          onclick="openModal('../images/blokdiagram.png', 'Blok Diagram Smart Box')"
+        >
+
+          <img
+            src="../images/blokdiagram.png"
+            alt="Blok Diagram Smart Box"
+          >
+
+        </button>
+
+        <div class="diagram-card__content">
+
+          <span>02</span>
+
+          <h3>
+            Blok Diagram
+          </h3>
+
+          <p>
+            Menunjukkan keterkaitan perangkat input,
+            proses, dan output pada sistem.
+          </p>
+
+          <details>
+
+            <summary>
+              Lihat detail
+            </summary>
+
+            <p>
+              Input dari kamera dan sensor diproses oleh
+              Raspberry Pi sebagai pengendali utama dan
+              diteruskan ke server untuk verifikasi,
+              pencatatan aktivitas, serta penyimpanan database.
+              Output berupa akses pintu, buzzer, dan notifikasi Telegram.
+            </p>
+
+          </details>
+
+        </div>
+
+      </article>
+
+
+      <!-- 03 IPO -->
+
+      <article class="diagram-card">
+
+        <button
+          class="diagram-card__image"
+          onclick="openModal('../images/ipo.png', 'Diagram IPO Smart Box')"
+        >
+
+          <img
+            src="../images/ipo.png"
+            alt="Diagram IPO Smart Box"
+          >
+
+        </button>
+
+        <div class="diagram-card__content">
+
+          <span>03</span>
+
+          <h3>
+            Diagram IPO
+          </h3>
+
+          <p>
+            Menjelaskan alur input, proses, dan output
+            dari sistem Smart Box.
+          </p>
+
+          <details>
+
+            <summary>
+              Lihat detail
+            </summary>
+
+            <p>
+              Sistem menerima data dari kamera, website,
+              dan berbagai sensor. Data diproses oleh
+              Raspberry Pi dan server hingga menghasilkan
+              akses pintu, indikator buzzer, log website,
+              serta notifikasi Telegram.
+            </p>
+
+          </details>
+
+        </div>
+
+      </article>
+
+
+      <!-- 04 FLOWCHART -->
+
+      <article class="diagram-card">
+
+        <button
+          class="diagram-card__image"
+          onclick="openModal('../images/flowchart.jpeg', 'Flowchart Smart Box')"
+        >
+
+          <img
+            src="../images/flowchart.jpeg"
+            alt="Flowchart Smart Box"
+          >
+
+        </button>
+
+        <div class="diagram-card__content">
+
+          <span>04</span>
+
+          <h3>
+            Flowchart
+          </h3>
+
+          <p>
+            Menggambarkan alur kerja utama sistem
+            berdasarkan mode kurir dan penghuni.
+          </p>
+
+          <details>
+
+            <summary>
+              Lihat detail
+            </summary>
+
+            <p>
+              Mode kurir menggunakan QR Code dan verifikasi
+              nomor resi, sedangkan mode penghuni menggunakan
+              InsightFace–ArcFace. Setiap proses akses dicatat
+              dalam log dan sistem memberikan notifikasi.
+            </p>
+
+          </details>
+
+        </div>
+
+      </article>
+
+
+      <!-- 05 WIRING -->
+
+      <article class="diagram-card">
+
+        <button
+          class="diagram-card__image"
+          onclick="openModal('../images/wiring.jpeg', 'Wiring Diagram Smart Box')"
+        >
+
+          <img
+            src="../images/wiring.jpeg"
+            alt="Wiring Diagram Smart Box"
+          >
+
+        </button>
+
+        <div class="diagram-card__content">
+
+          <span>05</span>
+
+          <h3>
+            Wiring Diagram
+          </h3>
+
+          <p>
+            Menunjukkan koneksi komponen perangkat keras
+            Smart Box berbasis Raspberry Pi 4.
+          </p>
+
+          <details>
+
+            <summary>
+              Lihat detail
+            </summary>
+
+            <p>
+              Raspberry Pi 4 terhubung dengan webcam,
+              sensor ultrasonik, sensor getar, push button,
+              buzzer, relay, dan solenoid door lock beserta
+              sistem catu dayanya.
+            </p>
+
+          </details>
+
+        </div>
+
+      </article>
+
+
+      <!-- 06 ERD -->
+
+      <article class="diagram-card">
+
+        <button
+          class="diagram-card__image"
+          onclick="openModal('../images/ERD.png', 'ERD Database Smart Box')"
+        >
+
+          <img
+            src="../images/ERD.png"
+            alt="ERD Database Smart Box"
+          >
+
+        </button>
+
+        <div class="diagram-card__content">
+
+          <span>06</span>
+
+          <h3>
+            ERD Database
+          </h3>
+
+          <p>
+            Menggambarkan hubungan data pengguna,
+            penghuni, paket, dan aktivitas sistem.
+          </p>
+
+          <details>
+
+            <summary>
+              Lihat detail
+            </summary>
+
+            <p>
+              Struktur database terdiri dari users, penghuni,
+              pakets, dan activity_logs untuk mengelola data
+              pengguna, paket, serta riwayat aktivitas Smart Box.
+            </p>
+
+          </details>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= IMAGE MODAL ================= -->
+
+<div
+  class="image-modal"
+  id="imageModal"
+  onclick="closeModal()"
+>
+
+  <button
+    class="image-modal__close"
+    onclick="closeModal()"
+  >
+    ×
+  </button>
+
+  <img
+    id="modalImage"
+    src=""
+    alt=""
+  >
+
+</div>
+
+
+<script>
+
+  function openModal(image, title) {
+
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+
+    modalImage.src = image;
+    modalImage.alt = title;
+
+    modal.classList.add("active");
+
+  }
+
+
+  function closeModal() {
+
+    const modal = document.getElementById("imageModal");
+
+    modal.classList.remove("active");
+
+  }
+
+
+  document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+      closeModal();
+    }
+
+  });
+
+</script>
+
+
+    <!-- ================= DOCUMENTATION ================= -->
+
+<section class="project-detail__section">
+
+  <div class="container">
+
+    <div class="project-detail__heading-small">
+
+      <p class="project-detail__label">
+        PROSES PENGERJAAN & DOKUMENTASI
+      </p>
+
+      <h2>
+        Proses Pembuatan Smart Box
+      </h2>
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+      <!-- ================= 01 FACE RECOGNITION ================= -->
+
+      <article class="process-card">
+
+        <button
+          class="process-card__image">
+
+          <img
+            src="../images/face-detection.jpeg"
+            alt="Implementasi Face Recognition"
+          >
+
+        </button>
+
+
+        <div class="process-card__content">
+
+          <span>01</span>
+
+          <h3>
+            Implementasi Face Recognition
+          </h3>
+
+          <p>
+            Implementasi InsightFace–ArcFace mulai dari
+            deteksi, alignment, hingga evaluasi pengenalan wajah.
+          </p>
+
+          <button
+            class="process-card__link"
+            onclick="openProcessGallery(0)"
+          >
+            Lihat foto →
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ================= 02 HARDWARE ================= -->
+
+      <article class="process-card">
+
+        <button
+          class="process-card__image"
+        >
+
+          <img
+            src="../images/hardware-5.jpeg"
+            alt="Perakitan Hardware Smart Box"
+          >
+
+        </button>
+
+
+        <div class="process-card__content">
+
+          <span>02</span>
+
+          <h3>
+            Perakitan & Integrasi Hardware
+          </h3>
+
+          <p>
+            Proses perakitan dan integrasi komponen hardware
+            hingga menjadi satu sistem Smart Box.
+          </p>
+
+          <button
+            class="process-card__link"
+            onclick="openProcessGallery(1)"
+          >
+            Lihat foto →
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ================= 03 WEBSITE ================= -->
+
+      <article class="process-card">
+
+        <button
+          class="process-card__image"
+        >
+
+          <img
+            src="../images/website-1.png"
+            alt="Pengembangan Website Smart Box"
+          >
+
+        </button>
+
+
+        <div class="process-card__content">
+
+          <span>03</span>
+
+          <h3>
+            Pengembangan Website
+          </h3>
+
+          <p>
+            Pengembangan website untuk pengelolaan data,
+            paket, face recognition, dan monitoring aktivitas.
+          </p>
+
+          <button
+            class="process-card__link"
+            onclick="openProcessGallery(2)"
+          >
+            Lihat foto →
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ================= 04 FINAL ================= -->
+
+      <article class="process-card">
+
+        <button
+          class="process-card__image"
+        >
+
+          <img
+            src="../images/box-1.jpeg"
+            alt="Hasil Akhir Smart Box"
+          >
+
+        </button>
+
+
+        <div class="process-card__content">
+
+          <span>04</span>
+
+          <h3>
+            Hasil Akhir & Integrasi Telegram
+          </h3>
+
+          <p>
+            Hasil akhir Smart Box setelah hardware,
+            website, dan notifikasi Telegram terintegrasi.
+          </p>
+
+          <button
+            class="process-card__link"
+            onclick="openProcessGallery(3)"
+          >
+            Lihat foto →
+          </button>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= PROCESS MODAL ================= -->
+
+<div
+  class="process-modal"
+  id="processModal"
+>
+
+  <button
+    class="process-modal__close"
+    onclick="closeProcessGallery()"
+  >
+    ×
+  </button>
+
+
+  <button
+    class="process-modal__prev"
+    onclick="previousProcessPhoto()"
+  >
+    ←
+  </button>
+
+
+  <div class="process-modal__content">
+
+    <img
+      id="processModalImage"
+      src=""
+      alt=""
+    >
+
+    <p
+      id="processModalCaption"
+      class="process-modal__caption"
+    ></p>
+
+    <span
+      id="processModalCounter"
+      class="process-modal__counter"
+    ></span>
+
+  </div>
+
+
+  <button
+    class="process-modal__next"
+    onclick="nextProcessPhoto()"
+  >
+    →
+  </button>
+
+</div>
+
+  </main>
+
+  <script>
+
+const processGalleries = [
+
+  /* 01 — FACE RECOGNITION */
+
+  [
+    {
+      image: "../images/face-detection.jpeg",
+      caption: "Face Detection"
+    },
+    {
+      image: "../images/face-alignment.jpeg",
+      caption: "Face Alignment"
+    },
+    {
+      image: "../images/confusion-matrix.jpeg",
+      caption: "Confusion Matrix"
+    }
+  ],
+
+
+  /* 02 — HARDWARE */
+
+  [
+    {
+      image: "../images/hardware-1.jpeg",
+      caption: "HC-SR04 Ultrasonic Sensor"
+    },
+    {
+      image: "../images/hardware-2.jpeg",
+      caption: "Push button"
+    },
+    {
+      image: "../images/hardware-3.jpeg",
+      caption: "Relay 2 channel"
+    },
+    {
+      image: "../images/hardware-4.jpeg",
+      caption: "SW-420 Vibration Sensor"
+    },
+    {
+      image: "../images/hardware-5.jpeg",
+      caption: "Integrasi keseluruhan hardware"
+    }
+  ],
+
+
+  /* 03 — WEBSITE */
+
+  [
+    {
+      image: "../images/website-1.png",
+      caption: "Halaman login"
+    },
+    {
+      image: "../images/website-2.png",
+      caption: "Dashboard admin"
+    },
+      {
+      image: "../images/website-3.png",
+      caption: "Dashboard penghuni & Upload foto"
+    },
+    {
+      image: "../images/website-4.png",
+      caption: "Tambah penghuni"
+    },
+    {
+      image: "../images/website-5.png",
+      caption: "Generate embedding"
+    },
+    {
+      image: "../images/website-6.png",
+      caption: "Input Resi"
+    },
+    {
+      image: "../images/website-7.png",
+      caption: "Activity log"
+    },
+  ],
+
+
+  /* 04 — HASIL AKHIR */
+
+  [
+    {
+      image: "../images/box-1.jpeg",
+      caption: "Smart Box"
+    },
+    {
+      image: "../images/box-2.jpeg",
+      caption: "Smart Box"
+    },
+     {
+      image: "../images/box-3.jpeg",
+      caption: "Smart Box"
+    },
+    {
+      image: "../images/telegram.jpeg",
+      caption: "Notifikasi Telegram"
+    }
+  ]
+
+];
+
+
+let currentGallery = 0;
+let currentPhoto = 0;
+
+
+function openProcessGallery(galleryIndex) {
+
+  currentGallery = galleryIndex;
+  currentPhoto = 0;
+
+  updateProcessModal();
+
+  document
+    .getElementById("processModal")
+    .classList.add("active");
+
+}
+
+
+function closeProcessGallery() {
+
+  document
+    .getElementById("processModal")
+    .classList.remove("active");
+
+}
+
+
+function updateProcessModal() {
+
+  const photo =
+    processGalleries[currentGallery][currentPhoto];
+
+  document.getElementById("processModalImage").src =
+    photo.image;
+
+  document.getElementById("processModalImage").alt =
+    photo.caption;
+
+  document.getElementById("processModalCaption").textContent =
+    photo.caption;
+
+  document.getElementById("processModalCounter").textContent =
+    `${currentPhoto + 1} / ${processGalleries[currentGallery].length}`;
+
+}
+
+
+function nextProcessPhoto() {
+
+  const gallery =
+    processGalleries[currentGallery];
+
+  currentPhoto =
+    (currentPhoto + 1) % gallery.length;
+
+  updateProcessModal();
+
+}
+
+
+function previousProcessPhoto() {
+
+  const gallery =
+    processGalleries[currentGallery];
+
+  currentPhoto =
+    (currentPhoto - 1 + gallery.length) % gallery.length;
+
+  updateProcessModal();
+
+}
+
+
+/* ESC untuk menutup */
+
+document.addEventListener("keydown", function(event) {
+
+  if (event.key === "Escape") {
+    closeProcessGallery();
+  }
+
+});
+
+
+/* Klik area gelap untuk menutup */
+
+document
+  .getElementById("processModal")
+  .addEventListener("click", function(event) {
+
+    if (event.target === this) {
+      closeProcessGallery();
+    }
+
+  });
+
+</script>
+
+</body>
+
+</html>

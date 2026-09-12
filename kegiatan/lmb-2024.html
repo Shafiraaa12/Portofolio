@@ -22,6 +22,9 @@
 
 <body>
 
+
+  <!-- ================= HEADER ================= -->
+
   <header class="detail-header">
 
     <div class="container">
@@ -38,11 +41,15 @@
   </header>
 
 
+
   <main>
 
     <section class="section">
 
       <div class="container">
+
+
+        <!-- ================= PAGE HEADING ================= -->
 
         <div class="detail-top">
 
@@ -72,22 +79,31 @@
             Negeri Surabaya
           </p>
 
+
+          <!-- TOMBOL FOTO -->
+
+          <button
+            type="button"
+            class="lmb-gallery-button"
+            onclick="openLmbGallery()"
+          >
+            Lihat foto kegiatan →
+          </button>
+
         </div>
+
 
 
         <!-- ================= 2024 ================= -->
 
-        <div class="lmb-period">
+        <article class="lmb-period">
 
           <div class="lmb-period__year">
             2024
           </div>
 
-          <div class="lmb-period__content">
 
-            <p class="activity__organization">
-              KEPALA DEPARTEMEN EKSTERNAL
-            </p>
+          <div class="lmb-period__content">
 
             <h2>
               Kepala Departemen Eksternal
@@ -106,68 +122,32 @@
               dengan perguruan tinggi lain.
             </p>
 
+
             <a
               href="../files/sertifikat_lmb2024.pdf"
               target="_blank"
+              rel="noopener"
               class="activity__link"
             >
               Lihat sertifikat →
             </a>
 
-
-            <div class="detail-gallery">
-
-              <div class="detail-gallery__heading">
-
-                <p class="activity__organization">
-                  DOKUMENTASI
-                </p>
-
-                <h3>
-                  Foto kegiatan
-                </h3>
-
-              </div>
-
-              <div class="detail-gallery__grid">
-
-                <img
-                  src="../images/lmb-2024-1.jpg"
-                  alt="Kegiatan LMB PENS 2024"
-                >
-
-                <img
-                  src="../images/lmb-2024-2.jpg"
-                  alt="Kegiatan LMB PENS 2024"
-                >
-
-                <img
-                  src="../images/lmb-2024-3.jpg"
-                  alt="Kegiatan LMB PENS 2024"
-                >
-
-              </div>
-
-            </div>
-
           </div>
 
-        </div>
+        </article>
+
 
 
         <!-- ================= 2023 ================= -->
 
-        <div class="lmb-period">
+        <article class="lmb-period">
 
           <div class="lmb-period__year">
             2023
           </div>
 
-          <div class="lmb-period__content">
 
-            <p class="activity__organization">
-              STAFF MUDA DEPARTEMEN EKSTERNAL
-            </p>
+          <div class="lmb-period__content">
 
             <h2>
               Staff Muda Departemen Eksternal
@@ -183,54 +163,286 @@
               yang melibatkan UKM maupun pihak eksternal.
             </p>
 
+
             <a
               href="../files/sertifikat_lmb2023.pdf"
               target="_blank"
+              rel="noopener"
               class="activity__link"
             >
               Lihat sertifikat →
             </a>
 
-
-            <div class="detail-gallery">
-
-              <div class="detail-gallery__heading">
-
-                <p class="activity__organization">
-                  DOKUMENTASI
-                </p>
-
-                <h3>
-                  Foto kegiatan
-                </h3>
-
-              </div>
-
-              <div class="detail-gallery__grid">
-
-                <img
-                  src="../images/lmb-2023-1.jpg"
-                  alt="Kegiatan LMB PENS 2023"
-                >
-
-                <img
-                  src="../images/lmb-2023-2.jpg"
-                  alt="Kegiatan LMB PENS 2023"
-                >
-
-              </div>
-
-            </div>
-
           </div>
 
-        </div>
+        </article>
+
 
       </div>
 
     </section>
 
   </main>
+
+
+
+  <!-- =====================================================
+       PHOTO MODAL
+  ====================================================== -->
+
+  <div
+    class="lmb-modal"
+    id="lmbModal"
+  >
+
+    <div
+      class="lmb-modal__overlay"
+      onclick="closeLmbGallery()"
+    ></div>
+
+
+    <div class="lmb-modal__box">
+
+
+      <!-- CLOSE -->
+
+      <button
+        type="button"
+        class="lmb-modal__close"
+        onclick="closeLmbGallery()"
+        aria-label="Tutup"
+      >
+        ×
+      </button>
+
+
+
+      <!-- PHOTO -->
+
+      <div class="lmb-modal__photo">
+
+
+        <button
+          type="button"
+          class="lmb-modal__arrow lmb-modal__arrow--left"
+          onclick="changeLmbPhoto(-1)"
+          aria-label="Foto sebelumnya"
+        >
+          ←
+        </button>
+
+
+        <img
+          id="lmbModalImage"
+          src="../images/lmb-1.JPG"
+          alt="Dokumentasi kegiatan LMB PENS"
+        >
+
+
+        <button
+          type="button"
+          class="lmb-modal__arrow lmb-modal__arrow--right"
+          onclick="changeLmbPhoto(1)"
+          aria-label="Foto berikutnya"
+        >
+          →
+        </button>
+
+
+      </div>
+
+
+
+      <!-- CAPTION -->
+
+      <div class="lmb-modal__info">
+
+        <span id="lmbPhotoNumber">
+          1 / 5
+        </span>
+
+        <p id="lmbPhotoCaption">
+          Kegiatan LMB PENS 2024
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script>
+
+    const lmbPhotos = [
+
+      {
+        src: "../images/lmb-1.jpg",
+        caption: "Kegiatan LMB PENS"
+      },
+
+      {
+        src: "../images/lmb-2.jpg",
+        caption: "Kegiatan LMB PENS"
+      },
+
+      {
+        src: "../images/lmb-3.jpg",
+        caption: "Kegiatan LMB PENS"
+      },
+
+      {
+        src: "../images/lmb-4.jpg",
+        caption: "Kegiatan LMB PENS"
+      },
+
+      {
+        src: "../images/lmb-5.jpg",
+        caption: "Kegiatan LMB PENS"
+      }
+
+    ];
+
+
+    let lmbCurrentPhoto = 0;
+
+
+
+    function openLmbGallery() {
+
+      const modal =
+        document.getElementById("lmbModal");
+
+      lmbCurrentPhoto = 0;
+
+      updateLmbPhoto();
+
+      modal.classList.add("is-open");
+
+      document.body.classList.add("modal-open");
+
+    }
+
+
+
+    function closeLmbGallery() {
+
+      const modal =
+        document.getElementById("lmbModal");
+
+      modal.classList.remove("is-open");
+
+      document.body.classList.remove("modal-open");
+
+    }
+
+
+
+    function changeLmbPhoto(direction) {
+
+      lmbCurrentPhoto += direction;
+
+
+      if (lmbCurrentPhoto < 0) {
+
+        lmbCurrentPhoto =
+          lmbPhotos.length - 1;
+
+      }
+
+
+      if (lmbCurrentPhoto >= lmbPhotos.length) {
+
+        lmbCurrentPhoto = 0;
+
+      }
+
+
+      updateLmbPhoto();
+
+    }
+
+
+
+    function updateLmbPhoto() {
+
+      const image =
+        document.getElementById("lmbModalImage");
+
+      const number =
+        document.getElementById("lmbPhotoNumber");
+
+      const caption =
+        document.getElementById("lmbPhotoCaption");
+
+
+      image.src =
+        lmbPhotos[lmbCurrentPhoto].src;
+
+
+      image.alt =
+        lmbPhotos[lmbCurrentPhoto].caption;
+
+
+      number.textContent =
+        (lmbCurrentPhoto + 1)
+        + " / "
+        + lmbPhotos.length;
+
+
+      caption.textContent =
+        lmbPhotos[lmbCurrentPhoto].caption;
+
+    }
+
+
+
+    /* ================= KEYBOARD ================= */
+
+    document.addEventListener(
+      "keydown",
+      function(event) {
+
+        const modal =
+          document.getElementById("lmbModal");
+
+
+        if (!modal.classList.contains("is-open")) {
+          return;
+        }
+
+
+        if (event.key === "Escape") {
+
+          closeLmbGallery();
+
+        }
+
+
+        if (event.key === "ArrowLeft") {
+
+          changeLmbPhoto(-1);
+
+        }
+
+
+        if (event.key === "ArrowRight") {
+
+          changeLmbPhoto(1);
+
+        }
+
+      }
+    );
+
+  </script>
+
 
 </body>
 
