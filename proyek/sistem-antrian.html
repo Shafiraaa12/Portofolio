@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Sistem Antrian Klinik — Project Pribadi</title>
+
+  <link
+    rel="stylesheet"
+    href="../css/style.css"
+  >
+
+</head>
+
+
+<body>
+
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="detail-header">
+
+    <div class="container">
+
+      <a
+        href="../index.html#projects"
+        class="detail-back"
+      >
+        ← Kembali
+      </a>
+
+    </div>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- ================= PROJECT ================= -->
+
+    <section class="project-detail">
+
+      <div class="container">
+
+        <div class="project-detail__top">
+
+          <p class="section__label">
+            PROJECT PRIBADI
+          </p>
+
+        </div>
+
+
+        <div class="project-detail__heading">
+
+          <h1>
+            Sistem Antrian <span>Klinik</span>
+          </h1>
+
+          <p>
+            Sistem antrean berbasis web yang memungkinkan pasien
+            memantau antrean dan petugas mengelola pemanggilan
+            serta recall nomor antrean.
+          </p>
+
+
+          <div class="project-detail__links">
+
+            <a
+              href="https://antrian-ku.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Halaman Pasien →
+            </a>
+
+            <a
+              href="https://antrian-ku.vercel.app/login"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Halaman Petugas →
+            </a>
+
+            <a
+              href="https://github.com/Shafiraaa12/sistem-antrian.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub →
+            </a>
+
+          </div>
+
+
+          <!-- AKUN DEMO 
+
+          <div class="demo-login">
+
+            <span class="demo-login__label">
+              Akun demo petugas
+            </span>
+
+            <span>
+              Username: <strong>petugas</strong>
+            </span>
+
+            <span>
+              Password: <strong>12345</strong>
+            </span>
+
+          </div> -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="project-detail__section">
+
+      <div class="container">
+
+        <div class="project-detail__grid">
+
+
+          <!-- LATAR BELAKANG -->
+
+          <div>
+
+            <p class="project-detail__label">
+              LATAR BELAKANG
+            </p>
+
+            <h2>
+              Antrean yang lebih fleksibel
+            </h2>
+
+          </div>
+
+
+          <div class="project-detail__text">
+
+            <p>
+              Ide sistem ini muncul dari pengalaman pribadi saat menunggu antrean di klinik. 
+              Dari pengalaman tersebut, saya berpikir bahwa akan lebih praktis jika pasien dapat 
+              mengetahui perkembangan antrean tanpa harus terus menunggu di tempat. Karena itu, saya 
+              mencoba membuat sistem antrean berbasis web yang memungkinkan pasien memantau antrean, 
+              sementara petugas dapat mengelola pemanggilan dan recall nomor antrean.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="project-detail__grid project-detail__grid--second">
+
+
+          <!-- TUJUAN -->
+
+          <div>
+
+            <p class="project-detail__label">
+              TUJUAN
+            </p>
+
+            <h2>
+              Mempermudah proses antrean
+            </h2>
+
+          </div>
+
+
+          <div class="project-detail__text">
+
+            <p>
+              Sistem dibuat untuk mempermudah pasien dalam memantau 
+              perkembangan antrean dan mengecek nomor antrean, sekaligus 
+              membantu petugas mengelola pemanggilan nomor secara langsung, 
+              termasuk melewati nomor pasien yang belum hadir dan melakukan 
+              recall ketika pasien sudah kembali.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= SYSTEM DESIGN ================= -->
+
+    <section class="project-detail__section project-detail__section--soft">
+
+      <div class="container">
+
+
+        <div class="project-detail__heading-small">
+
+          <p class="project-detail__label">
+            PERANCANGAN SISTEM
+          </p>
+
+          <h2>
+            Rancangan Sistem
+          </h2>
+
+        </div>
+
+
+
+        <div class="diagram-grid">
+
+
+          <!-- ================= 01 FLOWCHART ================= -->
+
+          <article class="diagram-card">
+
+            <button
+              class="diagram-card__image"
+              onclick="openModal(
+                '../images/flowchartA.jpeg',
+                'Flowchart Sistem Antrian'
+              )"
+            >
+
+              <img
+                src="../images/flowchartA.jpeg"
+                alt="Flowchart Sistem Antrian"
+              >
+
+            </button>
+
+
+            <div class="diagram-card__content">
+
+              <span>
+                01
+              </span>
+
+              <h3>
+                Flowchart
+              </h3>
+
+              <p>
+                Menggambarkan alur proses antrean 
+                mulai dari nomor ditambahkan oleh petugas, 
+                pasien memantau antrean, hingga proses pemeriksaan. 
+                Jika pasien tidak hadir saat dipanggil, nomor dapat 
+                dilewati dan dilakukan recall ketika pasien sudah kembali.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ================= 02 USE CASE ================= -->
+
+          <article class="diagram-card">
+
+            <button
+              class="diagram-card__image"
+              onclick="openModal(
+                '../images/usecaseA.jpeg',
+                'Use Case Sistem Antrian'
+              )"
+            >
+
+              <img
+                src="../images/usecaseA.jpeg"
+                alt="Use Case Sistem Antrian"
+              >
+
+            </button>
+
+
+            <div class="diagram-card__content">
+
+              <span>
+                02
+              </span>
+
+              <h3>
+                Use Case
+              </h3>
+
+              <p>
+                Menggambarkan interaksi pasien dan petugas
+                dengan sistem dalam proses pengelolaan
+                antrean. Pasien dapat memantau nomor
+                antrean, sedangkan petugas mengelola
+                pemanggilan nomor.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ================= 03 ERD ================= -->
+
+          <article class="diagram-card">
+
+            <button
+              class="diagram-card__image"
+              onclick="openModal(
+                '../images/ERDA.jpeg',
+                'ERD Sistem Antrian'
+              )"
+            >
+
+              <img
+                src="../images/ERDA.jpeg"
+                alt="ERD Sistem Antrian"
+              >
+
+            </button>
+
+
+            <div class="diagram-card__content">
+
+              <span>
+                03
+              </span>
+
+              <h3>
+                ERD Database
+              </h3>
+
+              <p>
+                Menggambarkan struktur dan hubungan data
+                yang digunakan dalam sistem untuk menyimpan
+                informasi pengguna dan antrean.
+              </p>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="project-detail__section">
+
+      <div class="container">
+
+
+        <div class="project-detail__heading-small">
+
+          <p class="project-detail__label">
+            FITUR UTAMA
+          </p>
+
+          <h2>
+            Fitur Sistem Antrian
+          </h2>
+
+        </div>
+
+
+
+        <div class="diagram-grid">
+
+
+          <!-- ================= 01 MONITORING ================= -->
+
+          <article class="diagram-card">
+
+            <button
+              class="diagram-card__image"
+              onclick="openModal(
+                '../images/monitoring.jpeg',
+                'Monitoring Antrean'
+              )"
+            >
+
+              <img
+                src="../images/monitoring.jpeg"
+                alt="Monitoring Antrean"
+              >
+
+            </button>
+
+
+            <div class="diagram-card__content">
+
+              <span>
+                01
+              </span>
+
+              <h3>
+                Monitoring Antrean
+              </h3>
+
+              <p>
+                Pasien dapat memantau nomor antrean yang
+                sedang dipanggil dan melihat perkembangan
+                antrean melalui halaman pasien.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ================= 02 CEK NOMOR ================= -->
+
+          <article class="diagram-card">
+
+            <button
+              class="diagram-card__image"
+              onclick="openModal(
+                '../images/cek.jpeg',
+                'Cek Nomor Antrean'
+              )"
+            >
+
+              <img
+                src="../images/cek.jpeg"
+                alt="Cek Nomor Antrean"
+              >
+
+            </button>
+
+
+            <div class="diagram-card__content">
+
+              <span>
+                02
+              </span>
+
+              <h3>
+                Cek Nomor Antrean
+              </h3>
+
+              <p>
+                Pasien dapat mengecek nomor antrean untuk
+                mengetahui posisi dan status antreannya
+                melalui halaman pasien.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ================= 03 LOGIN ================= -->
+
+          <article class="diagram-card">
+
+            <button
+              class="diagram-card__image"
+              onclick="openModal(
+                '../images/login.jpeg',
+                'Login Petugas'
+              )"
+            >
+
+              <img
+                src="../images/login.jpeg"
+                alt="Halaman Login Petugas"
+              >
+
+            </button>
+
+
+            <div class="diagram-card__content">
+
+              <span>
+                03
+              </span>
+
+              <h3>
+                Login Petugas
+              </h3>
+
+              <p>
+                Petugas melakukan login sebelum mengakses
+                halaman untuk mengelola proses antrean.
+              </p>
+              <p>
+                <strong>Username:</strong> Petugas<br>
+                <strong>Password:</strong>12345
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ================= 04 DASHBOARD ================= -->
+
+          <article class="diagram-card">
+
+            <button
+              class="diagram-card__image"
+              onclick="openModal(
+                '../images/petugas.jpeg',
+                'Dashboard Petugas'
+              )"
+            >
+
+              <img
+                src="../images/petugas.jpeg"
+                alt="Dashboard Petugas"
+              >
+
+            </button>
+
+
+            <div class="diagram-card__content">
+
+              <span>
+                04
+              </span>
+
+              <h3>
+                Dashboard Petugas
+              </h3>
+
+              <p>
+                Dashboard menampilkan informasi antrean
+                dan menjadi halaman utama petugas dalam
+                mengelola proses antrean.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ================= 05 TAMBAH NOMOR ================= -->
+
+          <article class="diagram-card">
+
+            <button
+              class="diagram-card__image"
+              onclick="openModal(
+                '../images/tambah.jpeg',
+                'Menambahkan Nomor Antrean'
+              )"
+            >
+
+              <img
+                src="../images/tambah.jpeg"
+                alt="Petugas Menambahkan Nomor Antrean"
+              >
+
+            </button>
+
+
+            <div class="diagram-card__content">
+
+              <span>
+                05
+              </span>
+
+              <h3>
+                Menambahkan Nomor Antrean
+              </h3>
+
+              <p>
+                Petugas dapat menambahkan nomor antrean
+                baru ke dalam sistem sebelum proses
+                pemanggilan dilakukan.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ================= 06 RECALL ================= -->
+
+          <article class="diagram-card">
+
+            <button
+              class="diagram-card__image"
+              onclick="openModal(
+                '../images/recall.jpeg',
+                'Recall Nomor Antrean'
+              )"
+            >
+
+              <img
+                src="../images/recall.jpeg"
+                alt="Recall Nomor Antrean"
+              >
+
+            </button>
+
+
+            <div class="diagram-card__content">
+
+              <span>
+                06
+              </span>
+
+              <h3>
+                Recall Nomor Antrean
+              </h3>
+
+              <p>
+                Petugas dapat memanggil kembali nomor
+                antrean yang sebelumnya dilewati ketika
+                pasien sudah kembali.
+              </p>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= IMAGE MODAL ================= -->
+
+    <div
+      class="image-modal"
+      id="imageModal"
+      onclick="closeModal()"
+    >
+
+      <button
+        class="image-modal__close"
+        onclick="closeModal()"
+      >
+        ×
+      </button>
+
+
+      <img
+        id="modalImage"
+        src=""
+        alt=""
+      >
+
+    </div>
+
+
+  </main>
+
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script>
+
+    function openModal(image, title) {
+
+      const modal =
+        document.getElementById("imageModal");
+
+      const modalImage =
+        document.getElementById("modalImage");
+
+      modalImage.src = image;
+
+      modalImage.alt = title;
+
+      modal.classList.add("active");
+
+    }
+
+
+    function closeModal() {
+
+      const modal =
+        document.getElementById("imageModal");
+
+      modal.classList.remove("active");
+
+    }
+
+
+    document.addEventListener(
+      "keydown",
+      function(event) {
+
+        if (event.key === "Escape") {
+
+          closeModal();
+
+        }
+
+      }
+    );
+
+  </script>
+
+
+</body>
+
+</html>

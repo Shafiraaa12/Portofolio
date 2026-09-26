@@ -530,7 +530,7 @@ button {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 35px;
+  padding-bottom: 40px;
 }
 
 /*.section__number {
@@ -735,11 +735,8 @@ button {
 
 }
 
-
 .skills {
-
   border-top: 1px solid #31545a;
-
 }
 
 
@@ -897,7 +894,7 @@ button {
 .projects__heading {
   display: grid;
   grid-template-columns: 1fr 350px;
-  gap: 60px;
+  gap: 55px;
   margin-bottom: 45px;
 }
 
@@ -925,8 +922,8 @@ button {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .project-card {
@@ -941,8 +938,8 @@ button {
 ========================= */
 
 .project-card__image {
-  width: 85%;
-  max-height: 400px;
+  width: 90%;
+  max-height: 260px;
   margin: 0 auto;
   overflow: hidden;
   background: #e8eeee;
@@ -1042,9 +1039,9 @@ button {
     200px
     1fr;
 
-  gap: 80px;
+  gap: 55px;
 
-  padding-top: 35px;
+  padding-top: 28px;
 
   border-top: 1px solid var(--border);
 
