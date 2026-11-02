@@ -3068,13 +3068,18 @@ body.modal-open {
 
 .project-detail {
   padding: 60px 0 55px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 20px;
+  padding-top: 20px;
+
 }
 
 .project-detail__top {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .project-detail__heading {
@@ -3130,7 +3135,11 @@ body.modal-open {
 ===================================================== */
 
 .project-detail__section {
-  padding: 55px 0;
+  padding: 30px 0;
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .project-detail__section--soft {
@@ -3178,7 +3187,7 @@ body.modal-open {
 ===================================================== */
 
 .project-detail__heading-small {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 
@@ -3710,9 +3719,8 @@ body.modal-open {
 
 
 .internship-intro {
-  max-width: 850px;
-
-  margin-bottom: 10px;
+  max-width: 1000px;
+  margin-bottom: 0;
 }
 
 
