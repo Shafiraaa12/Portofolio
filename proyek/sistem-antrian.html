@@ -23,7 +23,7 @@
 <body>
 
 
-  <!-- ================= HEADER ================= -->
+  <!-- HEADER -->
 
   <header class="detail-header">
 
@@ -45,7 +45,7 @@
   <main>
 
 
-    <!-- ================= PROJECT ================= -->
+    <!-- PROJECT -->
 
     <section class="project-detail">
 
@@ -71,27 +71,36 @@
             memantau antrean dan petugas mengelola pemanggilan
             serta recall nomor antrean.
           </p>
+          
+          <p>
+            <strong>Catatan Demo:</strong> Screenshot dan video di bawah
+            menampilkan Mode Normal, termasuk halaman login petugas.
+            Sementara itu, Demo Mode disediakan agar fitur sistem dapat
+            dicoba secara langsung tanpa login menggunakan penyimpanan
+            lokal browser (localStorage).
+          </p>
+          
 
 
           <div class="project-detail__links">
 
-            <!-- <a
-              href="https://antrian-ku.vercel.app/"
+            <a
+              href="https://antrian-ku.vercel.app/?mode=demo"
               target="_blank"
               rel="noopener noreferrer"
               class="education__document"
             >
-              Halaman Pasien 
+              Demo Pasien 
             </a>
 
             <a
-              href="https://antrian-ku.vercel.app/login"
+              href="https://antrian-ku.vercel.app/petugas?mode=demo"
               target="_blank"
               rel="noopener noreferrer"
               class="education__document"
             >
-              Halaman Petugas 
-            </a> -->
+              Demo Petugas 
+            </a> 
 
             <a
               href="https://github.com/Shafiraaa12/sistem-antrian.git"
@@ -111,31 +120,11 @@
             </a>
 
           </div>
-
-
-          <!-- AKUN DEMO 
-
-          <div class="demo-login">
-
-            <span class="demo-login__label">
-              Akun demo petugas
-            </span>
-
-            <span>
-              Username: <strong>petugas</strong>
-            </span>
-
-            <span>
-              Password: <strong>12345</strong>
-            </span>
-
-          </div> -->
-
         </div>
       </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
+    <!-- ABOUT  -->
 
     <section class="project-detail__section">
 
@@ -162,11 +151,11 @@
           <div class="project-detail__text">
 
             <p>
-              Ide sistem ini muncul dari pengalaman pribadi saat menunggu antrean di klinik. 
-              Dari pengalaman tersebut, saya berpikir bahwa akan lebih praktis jika pasien dapat 
-              mengetahui perkembangan antrean tanpa harus terus menunggu di tempat. Karena itu, saya 
-              mencoba membuat sistem antrean berbasis web yang memungkinkan pasien memantau antrean, 
-              sementara petugas dapat mengelola pemanggilan dan recall nomor antrean.
+              Ide sistem ini berawal dari pengalaman pribadi saat menunggu antrean di klinik. 
+              Saya melihat bahwa pasien akan lebih terbantu jika dapat memantau perkembangan antrean 
+              tanpa harus terus menunggu di tempat. Dari hal tersebut, saya mengembangkan sistem 
+              antrean berbasis web yang memungkinkan pasien memantau antrean, sementara petugas 
+              dapat mengelola pemanggilan dan recall nomor antrean.
             </p>
 
           </div>
@@ -196,11 +185,10 @@
           <div class="project-detail__text">
 
             <p>
-              Sistem dibuat untuk mempermudah pasien dalam memantau 
-              perkembangan antrean dan mengecek nomor antrean, sekaligus 
-              membantu petugas mengelola pemanggilan nomor secara langsung, 
-              termasuk melewati nomor pasien yang belum hadir dan melakukan 
-              recall ketika pasien sudah kembali.
+             Sistem ini bertujuan mempermudah pasien dalam memantau perkembangan 
+             dan mengecek nomor antrean, sekaligus membantu petugas mengelola 
+             proses pemanggilan. Petugas juga dapat melewati nomor pasien yang 
+             belum hadir dan memanggilnya kembali melalui fitur recall ketika pasien sudah tersedia.
             </p>
 
           </div>
@@ -213,7 +201,7 @@
 
 
 
-    <!-- ================= SYSTEM DESIGN ================= -->
+    <!-- SYSTEM DESIGN  -->
 
     <section class="project-detail__section project-detail__section--soft">
 
@@ -237,7 +225,7 @@
         <div class="diagram-grid">
 
 
-          <!-- ================= 01 FLOWCHART ================= -->
+          <!-- 01 FLOWCHART -->
 
           <article class="diagram-card">
 
@@ -268,11 +256,10 @@
               </h3>
 
               <p>
-                Menggambarkan alur proses antrean 
-                mulai dari nomor ditambahkan oleh petugas, 
-                pasien memantau antrean, hingga proses pemeriksaan. 
-                Jika pasien tidak hadir saat dipanggil, nomor dapat 
-                dilewati dan dilakukan recall ketika pasien sudah kembali.
+                Menjelaskan alur proses sistem antrean, mulai dari petugas menambahkan 
+                nomor antrean, pasien memantau perkembangan antrean, hingga proses 
+                pemanggilan. Jika pasien belum hadir, petugas dapat melewati nomor 
+                tersebut dan melakukan recall ketika pasien sudah tersedia.
               </p>
 
             </div>
@@ -281,7 +268,7 @@
 
 
 
-          <!-- ================= 02 USE CASE ================= -->
+          <!-- 02 USE CASE -->
 
           <article class="diagram-card">
 
@@ -312,11 +299,10 @@
               </h3>
 
               <p>
-                Menggambarkan interaksi pasien dan petugas
-                dengan sistem dalam proses pengelolaan
-                antrean. Pasien dapat memantau nomor
-                antrean, sedangkan petugas mengelola
-                pemanggilan nomor.
+                Menjelaskan interaksi antara pasien dan petugas dengan sistem 
+                berdasarkan hak akses masing-masing. Pasien dapat memantau dan 
+                mengecek nomor antrean, sedangkan petugas dapat mengelola nomor 
+                serta proses pemanggilan antrean.
               </p>
 
             </div>
@@ -325,7 +311,7 @@
 
 
 
-          <!-- ================= 03 ERD ================= -->
+          <!-- 03 ERD -->
 
           <article class="diagram-card">
 
@@ -356,9 +342,8 @@
               </h3>
 
               <p>
-                Menggambarkan struktur dan hubungan data
-                yang digunakan dalam sistem untuk menyimpan
-                informasi pengguna dan antrean.
+                Menjelaskan struktur database serta hubungan antarentitas yang digunakan 
+                untuk menyimpan dan mengelola data sistem, termasuk informasi pengguna dan data antrean.
               </p>
 
             </div>
@@ -374,7 +359,7 @@
 
 
 
-    <!-- ================= FEATURES ================= -->
+    <!-- FEATURES -->
 
     <section class="project-detail__section">
 
@@ -398,7 +383,7 @@
         <div class="diagram-grid">
 
 
-          <!-- ================= 01 MONITORING ================= -->
+          <!-- 01 MONITORING -->
 
           <article class="diagram-card">
 
@@ -430,8 +415,8 @@
 
               <p>
                 Pasien dapat memantau nomor antrean yang
-                sedang dipanggil dan melihat perkembangan
-                antrean melalui halaman pasien.
+                sedang dipanggil serta melihat perkembangan
+                antrean secara langsung melalui halaman pasien.
               </p>
 
             </div>
@@ -440,7 +425,7 @@
 
 
 
-          <!-- ================= 02 CEK NOMOR ================= -->
+          <!-- 02 CEK NOMOR -->
 
           <article class="diagram-card">
 
@@ -471,9 +456,9 @@
               </h3>
 
               <p>
-                Pasien dapat mengecek nomor antrean untuk
-                mengetahui posisi dan status antreannya
-                melalui halaman pasien.
+                Pasien dapat mencari nomor antrean untuk
+                mengetahui posisi dan status antrean
+                yang sedang berjalan.
               </p>
 
             </div>
@@ -482,7 +467,7 @@
 
 
 
-          <!-- ================= 03 LOGIN ================= -->
+          <!-- 03 LOGIN -->
 
           <article class="diagram-card">
 
@@ -513,8 +498,8 @@
               </h3>
 
               <p>
-                Petugas melakukan login sebelum mengakses
-                halaman untuk mengelola proses antrean.
+                Petugas melakukan autentikasi melalui halaman login sebelum mengakses
+                dashboard dan fitur pengelolaan antrean.
               </p>
               <!--<p>
                 <strong>Username:</strong> petugas<br>
@@ -527,7 +512,7 @@
 
 
 
-          <!-- ================= 04 DASHBOARD ================= -->
+          <!-- 04 DASHBOARD -->
 
           <article class="diagram-card">
 
@@ -558,9 +543,8 @@
               </h3>
 
               <p>
-                Dashboard menampilkan informasi antrean
-                dan menjadi halaman utama petugas dalam
-                mengelola proses antrean.
+                Dashboard menjadi halaman utama petugas untuk melihat 
+                informasi antrean serta mengelola proses pemanggilan dan status antrean.
               </p>
 
             </div>
@@ -569,7 +553,7 @@
 
 
 
-          <!-- ================= 05 TAMBAH NOMOR ================= -->
+          <!-- 05 TAMBAH NOMOR -->
 
           <article class="diagram-card">
 
@@ -600,9 +584,8 @@
               </h3>
 
               <p>
-                Petugas dapat menambahkan nomor antrean
-                baru ke dalam sistem sebelum proses
-                pemanggilan dilakukan.
+                Petugas dapat menambahkan nomor antrean baru sesuai 
+                poli tujuan dan memasukkannya ke dalam daftar antrean untuk diproses.
               </p>
 
             </div>
@@ -611,7 +594,7 @@
 
 
 
-          <!-- ================= 06 RECALL ================= -->
+          <!-- 06 RECALL -->
 
           <article class="diagram-card">
 
@@ -642,9 +625,8 @@
               </h3>
 
               <p>
-                Petugas dapat memanggil kembali nomor
-                antrean yang sebelumnya dilewati ketika
-                pasien sudah kembali.
+                Petugas dapat memanggil kembali nomor antrean yang 
+                sebelumnya dilewati ketika pasien sudah hadir kembali.
               </p>
 
             </div>
@@ -660,7 +642,7 @@
 
 
 
-    <!-- ================= IMAGE MODAL ================= -->
+    <!-- IMAGE MODAL -->
 
     <div
       class="image-modal"
@@ -689,7 +671,7 @@
 
 
 
-  <!-- ================= JAVASCRIPT ================= -->
+  <!-- JAVASCRIPT -->
 
   <script>
 
